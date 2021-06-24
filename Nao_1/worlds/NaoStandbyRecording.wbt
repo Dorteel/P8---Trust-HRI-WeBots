@@ -1,0 +1,136 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  info [
+    "Aldebaran's Nao H25 V5.0"
+  ]
+  title "Nao Indoors"
+  basicTimeStep 16
+  FPS 20
+  contactProperties [
+    ContactProperties {
+      material1 "Nao foot material"
+      coulombFriction [
+        8.24
+      ]
+      bounce 0.9
+      bounceVelocity 0.003
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.0015676850439775899 0.9851887995525835 0.17146594880541857 3.0263762093923794
+  position -2.5364507168751746 2.0649465909943534 -3.1105270795311233
+  follow "NAO"
+  followType "Pan and Tilt Shot"
+}
+Background {
+  backUrl [
+    "textures/cubic/brown_floor_side.png"
+  ]
+  bottomUrl [
+    "textures/cubic/brown_floor_bottom.png"
+  ]
+  frontUrl [
+    "textures/cubic/brown_floor_side.png"
+  ]
+  leftUrl [
+    "textures/cubic/brown_floor_side.png"
+  ]
+  rightUrl [
+    "textures/cubic/brown_floor_side.png"
+  ]
+  topUrl [
+    "textures/cubic/brown_floor_top.png"
+  ]
+}
+Floor {
+  translation -1.7 0 -1.4
+  size 6.6 6.6
+  tileSize 1 1
+  appearance Parquetry {
+  }
+}
+Armchair {
+  translation -3.43 0 1.25
+  rotation 0 1 0 1.5708
+}
+PortraitPainting {
+  translation -2.87 1.605 1.85999
+  rotation 0 1 0 3.14159
+}
+Ceiling {
+  translation -1.7 2.4 -1.4
+  size 6.6 6.6
+}
+Wall {
+  translation 1 0 2
+  size 13 2.4 0.2
+}
+Wall {
+  translation -5.6 0 2
+  name "wall(1)"
+  size 1.2 2.4 0.2
+}
+Clock {
+  translation -3.9 1.48 1.88
+  rotation 0 1 0 3.14159
+}
+Wall {
+  translation -5.1 0 1.4
+  rotation 0 1 0 1.5708
+  name "wall(4)"
+  size 1.4 2.4 0.2
+}
+Wall {
+  translation -5.10002 0 -3.1
+  rotation 0 1 0 1.5708
+  name "wall(5)"
+  size 3.6 2.4 0.2
+}
+Door {
+  translation -1.15 0 2
+  rotation 0 1 0 3.14159
+  canBeOpen FALSE
+  doorHandle DoorLever {
+    hasStaticParent TRUE
+  }
+}
+Window {
+  translation -5.1 0 -0.3
+  rotation 0 1 0 1.5708
+  size 2 2.4 0.2
+}
+CeilingLight {
+  translation -2.5 2.4 -1
+  pointLightColor 1 1 0.9411764705882353
+  pointLightIntensity 2
+}
+FloorLight {
+  translation 0.84 0 -4
+  pointLightIntensity 6
+}
+FloorLight {
+  translation -4.31 0 -4
+  name "floor light(2)"
+  pointLightIntensity 6
+}
+FloorLight {
+  translation -4.64 0 1.58
+  name "floor light(1)"
+  pointLightIntensity 3
+}
+Table {
+  translation -2.7 0.02 -0.36
+  size 1.2 0.53 0.8
+}
+PottedTree {
+  translation -2.07538 0 1.63496
+  rotation 0 1 0 -1.3089953071795861
+}
+DEF NAO Nao_modified {
+  translation -2.69102 0.902951 -0.0478336
+  mainColor 1 1 1
+  color 0.666667 0 0
+  controller "Nao_unpersonalised"
+  supervisor TRUE
+}

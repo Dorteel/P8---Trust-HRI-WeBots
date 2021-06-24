@@ -1,0 +1,578 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  info [
+    "Aldebaran's Nao H25 V5.0"
+  ]
+  title "Nao Indoors"
+  basicTimeStep 16
+  FPS 20
+  contactProperties [
+    ContactProperties {
+      material1 "Nao foot material"
+      coulombFriction [
+        8.24
+      ]
+      bounce 0.9
+      bounceVelocity 0.003
+    }
+  ]
+}
+DEF VIEW Viewpoint {
+  orientation -0.43382249256699706 -0.8081084530677245 -0.3984454454796129 1.739459056936259
+  position -3.0910266120440717 0.9722456955516988 -0.4613031756404498
+  follow "solid"
+  followType "None"
+}
+Background {
+  backUrl [
+    "textures/cubic/brown_floor_side.png"
+  ]
+  bottomUrl [
+    "textures/cubic/brown_floor_bottom.png"
+  ]
+  frontUrl [
+    "textures/cubic/brown_floor_side.png"
+  ]
+  leftUrl [
+    "textures/cubic/brown_floor_side.png"
+  ]
+  rightUrl [
+    "textures/cubic/brown_floor_side.png"
+  ]
+  topUrl [
+    "textures/cubic/brown_floor_top.png"
+  ]
+}
+Floor {
+  translation -1.7 0 -1.4
+  size 6.6 6.6
+  tileSize 1 1
+  appearance Parquetry {
+  }
+}
+Sofa {
+  translation 0.98 0 2.60061e-06
+  rotation 0 1 0 3.14159
+}
+Armchair {
+  translation -3.43 0 1.25
+  rotation 0 1 0 1.5708
+}
+PortraitPainting {
+  translation -2.87 1.605 1.85999
+  rotation 0 1 0 3.14159
+}
+Ceiling {
+  translation -1.7 2.4 -1.4
+  size 6.6 6.6
+}
+Wall {
+  translation 1 0 2
+  size 13 2.4 0.2
+}
+Wall {
+  translation 1.7 0 -0.81
+  rotation 0 1 0 -1.5707996938995747
+  name "wall(2)"
+  size 13 2.4 0.2
+}
+Wall {
+  translation -0.47 0 -4.83
+  name "wall(3)"
+  size 13 2.4 0.2
+}
+Wall {
+  translation -5.6 0 2
+  name "wall(1)"
+  size 1.2 2.4 0.2
+}
+Clock {
+  translation -3.9 1.48 1.88
+  rotation 0 1 0 3.14159
+}
+Wall {
+  translation -5.1 0 1.4
+  rotation 0 1 0 1.5708
+  name "wall(4)"
+  size 1.4 2.4 0.2
+}
+Wall {
+  translation -5.10002 0 -3.1
+  rotation 0 1 0 1.5708
+  name "wall(5)"
+  size 3.6 2.4 0.2
+}
+Door {
+  translation -1.15 0 2
+  rotation 0 1 0 3.14159
+  canBeOpen FALSE
+  doorHandle DoorLever {
+    hasStaticParent TRUE
+  }
+}
+Window {
+  translation -5.1 0 -0.3
+  rotation 0 1 0 1.5708
+  size 2 2.4 0.2
+}
+CeilingLight {
+  translation -2.5 2.4 -1
+  pointLightColor 1 1 0.9411764705882353
+  pointLightIntensity 2
+}
+FloorLight {
+  translation 0.84 0 -4
+  pointLightIntensity 6
+}
+FloorLight {
+  translation -4.31 0 -4
+  name "floor light(2)"
+  pointLightIntensity 6
+}
+FloorLight {
+  translation -4.64 0 1.58
+  name "floor light(1)"
+  pointLightIntensity 3
+}
+Table {
+  translation -2.7 0.02 -0.36
+  size 1.2 0.53 0.8
+}
+DEF dice2 Solid {
+  translation -2.74695 0.564676 -0.393665
+  rotation 0 -1 0 0.0231853
+  children [
+    DEF D2 Group {
+      children [
+        DEF DOT Transform {
+          translation 0 -0.01 0
+          rotation 0 0 1 0
+          children [
+            DEF dot Shape {
+              appearance Asphalt {
+              }
+              geometry Cylinder {
+                height 0.0001
+                radius 0.0018
+              }
+            }
+          ]
+        }
+        DEF DOT6 Transform {
+          translation 0.005 0.01 0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation -2.1684e-19 0.01 0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation -0.005 0.01 0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation -0.005 0.01 -0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation 2.1684e-19 0.01 -0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation 0.005 0.01 -0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT2 Transform {
+          translation -0.0035 0.004 0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT2 Transform {
+          translation 0.004 -0.004 0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation 0.004 -0.004 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation 0.004 0.004 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation -0.004 0.004 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation 2.1684e-19 2.1684e-19 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation -0.004 -0.004 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT4 Transform {
+          translation 0.01 0.004 0.004
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT4 Transform {
+          translation 0.01 -0.004 -0.004
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT4 Transform {
+          translation 0.01 0.004 -0.004
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT4 Transform {
+          translation 0.01 -0.004 0.004
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT3 Transform {
+          translation -0.01 0 0
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT3 Transform {
+          translation -0.01 0.005 0.005
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT3 Transform {
+          translation -0.01 -0.005 -0.005
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF Body SolidRoundedBox {
+          size 0.02 0.02 0.02
+          borderRadius 0.002
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "textures/plastic.jpg"
+              ]
+            }
+            roughness 0.5
+            metalness 0
+          }
+          physics Physics {
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(1)"
+  boundingObject DEF BodyDIce Box {
+    size 0.02 0.02 0.02
+  }
+  physics Physics {
+    mass 0.01
+  }
+  rotationStep 0.01
+}
+DEF dice1 Solid {
+  translation -2.63676 0.565733 -0.571143
+  rotation 0.5754970252513714 0.5866560257410003 0.5697700250000849 2.12224
+  children [
+    DEF D2 Group {
+      children [
+        DEF DOT Transform {
+          translation 0 -0.01 0
+          rotation 0 0 1 0
+          children [
+            DEF dot Shape {
+              appearance Asphalt {
+              }
+              geometry Cylinder {
+                height 0.0001
+                radius 0.0018
+              }
+            }
+          ]
+        }
+        DEF DOT6 Transform {
+          translation 0.005 0.01 0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation -2.1684e-19 0.01 0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation -0.005 0.01 0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation -0.005 0.01 -0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation 2.1684e-19 0.01 -0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation 0.005 0.01 -0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT2 Transform {
+          translation -0.0035 0.004 0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT2 Transform {
+          translation 0.004 -0.004 0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation 0.004 -0.004 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation 0.004 0.004 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation -0.004 0.004 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation 2.1684e-19 2.1684e-19 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation -0.004 -0.004 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT4 Transform {
+          translation 0.01 0.004 0.004
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT4 Transform {
+          translation 0.01 -0.004 -0.004
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT4 Transform {
+          translation 0.01 0.004 -0.004
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT4 Transform {
+          translation 0.01 -0.004 0.004
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT3 Transform {
+          translation -0.01 0 0
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT3 Transform {
+          translation -0.01 0.005 0.005
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT3 Transform {
+          translation -0.01 -0.005 -0.005
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF Body SolidRoundedBox {
+          size 0.02 0.02 0.02
+          borderRadius 0.002
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "textures/plastic.jpg"
+              ]
+            }
+            roughness 0.5
+            metalness 0
+          }
+          physics Physics {
+          }
+        }
+      ]
+    }
+  ]
+  name "solid(2)"
+  boundingObject DEF BodyDIce Box {
+    size 0.02 0.02 0.02
+  }
+  physics Physics {
+    mass 0.01
+  }
+  rotationStep 0.01
+}
+DEF Sheet Solid {
+  translation -2.69 0.63 -0.63
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    Group {
+      children [
+        Transform {
+          translation 0 -0.075 0
+          children [
+            Shape {
+              appearance DEF Sheet1 Appearance {
+                material Material {
+                  ambientIntensity 0.9
+                  diffuseColor 1 1 1
+                  emissiveColor 1 1 1
+                  shininess 0
+                }
+                texture ImageTexture {
+                  url [
+                    "textures/varnished_wood.jpg"
+                  ]
+                }
+              }
+              geometry Box {
+                size 0.06 0.005 0.3
+              }
+            }
+          ]
+        }
+        Transform {
+          children [
+            Shape {
+              appearance USE Sheet1
+              geometry Box {
+                size 0.005 0.15 0.3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  boundingObject Box {
+    size 0.005 0.15 0.25
+  }
+  physics Physics {
+  }
+}
+PottedTree {
+  translation -2.07538 0 1.63496
+  rotation 0 1 0 -1.3089953071795861
+}
+PottedTree {
+  translation 1.05459 0 1.47455
+  rotation 0 1 0 -1.5707953071795862
+  name "potted tree(1)"
+}
+DEF NAO Nao_modified {
+  translation -2.74067 0.873873 -0.26805
+  mainColor 1 1 1
+  color 0.666667 0 0
+  controller "Nao_unpersonalised"
+  supervisor TRUE
+}

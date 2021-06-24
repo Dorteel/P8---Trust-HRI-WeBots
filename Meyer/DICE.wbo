@@ -1,0 +1,177 @@
+#VRML_OBJ R2020a utf8
+DEF DICE Solid {
+  translation -2.58 0.58 -1.13
+  children [
+    Group {
+      children [
+        DEF DOT Transform {
+          translation 0 -0.01 0
+          rotation 0 0 1 0
+          children [
+            DEF dot Shape {
+              appearance Asphalt {
+              }
+              geometry Cylinder {
+                height 0.0001
+                radius 0.0018
+              }
+            }
+          ]
+        }
+        DEF DOT6 Transform {
+          translation 0.005 0.01 0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation -2.1684e-19 0.01 0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation -0.005 0.01 0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation -0.005 0.01 -0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation 2.1684e-19 0.01 -0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT6 Transform {
+          translation 0.005 0.01 -0.0035
+          rotation 0 0 1 0
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT2 Transform {
+          translation -0.0035 0.004 0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT2 Transform {
+          translation 0.004 -0.004 0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation 0.004 -0.004 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation 0.004 0.004 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation -0.004 0.004 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation 2.1684e-19 2.1684e-19 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT5 Transform {
+          translation -0.004 -0.004 -0.01
+          rotation 1 0 0 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT4 Transform {
+          translation 0.01 0.004 0.004
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT4 Transform {
+          translation 0.01 -0.004 -0.004
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT4 Transform {
+          translation 0.01 0.004 -0.004
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT4 Transform {
+          translation 0.01 -0.004 0.004
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT3 Transform {
+          translation -0.01 0 0
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT3 Transform {
+          translation -0.01 0.005 0.005
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF DOT3 Transform {
+          translation -0.01 -0.005 -0.005
+          rotation 0 0 1 1.57
+          children [
+            USE dot
+          ]
+        }
+        DEF Body SolidRoundedBox {
+          size 0.02 0.02 0.02
+          borderRadius 0.002
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "textures/plastic.jpg"
+              ]
+            }
+            roughness 0.5
+            metalness 0
+          }
+        }
+      ]
+    }
+  ]
+}
